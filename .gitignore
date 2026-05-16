@@ -1,21 +1,32 @@
 # Gradle
-/.gradle/
-/build/
-/out/
-/.classpath
-/.project
-/.settings/
-/.idea/
-*.iml
+**/.gradle/
+**/build/
+**/out/
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
 
-# Java
+# Maven / Java build outputs
+**/target/
+**/generated-sources/
+**/maven-archiver/
+**/maven-status/
 *.class
 *.jar
 *.war
 *.ear
 
-# Maven
-/target/
+# NetBeans / Eclipse / IntelliJ metadata
+**/nbproject/private/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# Android / local config
+local.properties
+**/local.properties
 
 # Logs
 *.log
@@ -24,5 +35,5 @@ logs/
 # OS
 .DS_Store
 
-# IDEs
-/.vscode/
+# Editors
+.vscode/
