@@ -320,8 +320,8 @@ public class HomeView extends JFrame {
     BackgroundPanel(){ try { loadBg(); } catch(Exception ignored){} }
     private void loadBg(){
       try {
-        URL u = Assets.class.getResource("/img/sullivan.JPG");
-        if (u == null) u = Assets.class.getResource("/img/sullivan.jpg");
+        URL u = Assets.class.getResource("/ec/edu/monster/util/img/fondo.jpeg");
+        if (u == null) u = Assets.class.getResource("/ec/edu/monster/util/img/fondo.jpg");
         if (u != null) bgImage = ImageIO.read(u);
       } catch (IOException ex){ System.err.println("[Assets] No se pudo leer sullivan.JPG: "+ex.getMessage()); }
     }

@@ -26,7 +26,7 @@ class SoapService {
     // URL del servidor SOAP
     // 10.0.2.2 es la IP especial del emulador para acceder a localhost de tu PC
     // Si usas dispositivo físico, cambia a tu IP local (ej: 192.168.1.100)
-    private val baseUrl = "http://192.168.100.94:8080/WS_EurekaBank_Server/WSEureka"
+    private val baseUrl = "http://10.40.42.135:8080/WS_EurekaBank_Server/WSEureka"
     
     companion object {
         private const val NAMESPACE = "http://ws.monster.edu.ec/"

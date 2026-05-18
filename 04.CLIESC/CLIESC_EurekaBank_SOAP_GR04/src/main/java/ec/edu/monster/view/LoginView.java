@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.function.BiConsumer;
 
-public class LoginView extends JDialog {
+public class LoginView extends JFrame {
 
   private final JTextField txtUser = new JTextField();
   private final JPasswordField txtPass = new JPasswordField();
@@ -23,7 +23,7 @@ public class LoginView extends JDialog {
   private BiConsumer<String,String> onLogin;
 
   public LoginView() {
-    super((Frame)null, "EurekaBank | Ingreso", ModalityType.APPLICATION_MODAL);
+    setTitle("EurekaBank | Ingreso");
     setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
     setMinimumSize(new Dimension(900, 540));
     setLocationRelativeTo(null);
@@ -221,8 +221,8 @@ public class LoginView extends JDialog {
     BackgroundPanel(){ try{ loadBg(); }catch(Exception ignored){} }
     private void loadBg(){
       try{
-        URL u = Assets.class.getResource("/img/sullivan.JPG");
-        if (u == null) u = Assets.class.getResource("/img/sullivan.jpg");
+        URL u = Assets.class.getResource("/ec/edu/monster/util/img/fondo.jpeg");
+        if (u == null) u = Assets.class.getResource("/ec/edu/monster/util/img/fondo.jpg");
         if (u != null) bg = ImageIO.read(u);
       } catch(IOException ex){ System.err.println("No se pudo cargar sullivan.JPG: "+ex.getMessage()); }
     }
